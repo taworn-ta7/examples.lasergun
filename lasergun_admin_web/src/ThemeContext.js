@@ -55,8 +55,8 @@ export function ThemeManager({ children }) {
 			},
 		}),
 	));
-	const [theme, setTheme] = React.useState(themes[14]);
-	const [index, setIndex] = React.useState(14);
+	const [theme, setTheme] = React.useState(themes[15]);
+	const [index, setIndex] = React.useState(15);
 
 	/**
 	 * Change theme.

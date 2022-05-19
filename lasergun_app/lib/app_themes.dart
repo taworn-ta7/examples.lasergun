@@ -48,7 +48,7 @@ class AppTheme {
 
     if (_index != index) {
       _index = index;
-      log.info('change theme to $_index');
+      log.info("change theme to $_index");
 
       App.refresh(context);
     }

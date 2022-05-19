@@ -46,7 +46,7 @@ class AppLocalization {
 
     if (_index != i) {
       _index = i;
-      log.info('change locale to $locale');
+      log.info("change locale to $locale");
       LocaleSettings.setLocaleRaw(locale);
       App.refresh(context);
     }

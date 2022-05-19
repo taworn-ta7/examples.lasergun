@@ -45,7 +45,7 @@ class Services {
     // set user settings
     AppLocalization.instance().changeLocale(context, client.user!.locale);
     AppTheme.instance().changeTheme(context, client.user!.theme);
-    log.info('login to system, welcome :)');
+    log.info("login to system, welcome :)");
   }
 
   /// Logout task.
@@ -65,7 +65,7 @@ class Services {
     // move out to first page
     Navigator.popUntil(context, (route) => route.isFirst);
     AppTheme.instance().changeTheme(context, 14);
-    log.info('logout from system gracefully :)');
+    log.info("logout from system gracefully :)");
 
     // logout logic
     client.logout();

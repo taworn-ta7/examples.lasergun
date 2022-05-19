@@ -24,7 +24,7 @@ const { setPassword } = require('./utils/authen');
 				role: 'admin',
 				name: 'Administrator',
 				locale: 'en',
-				theme: 14,
+				theme: 15,
 			});
 			await entities.AccountTokens.create({
 				id,

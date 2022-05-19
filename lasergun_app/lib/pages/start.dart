@@ -22,11 +22,11 @@ class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);
 
   @override
-  _BeginState createState() => _BeginState();
+  _StartState createState() => _StartState();
 }
 
-/// _BeginState internal class.
-class _BeginState extends State<StartPage> {
+/// _StartState internal class.
+class _StartState extends State<StartPage> {
   static final log = Logger('StartPage');
 
   // widgets
@@ -45,12 +45,12 @@ class _BeginState extends State<StartPage> {
     _obscurePassword = true;
     _isRememberChecked = false;
     _initTimer = Timer(const Duration(), _handleInit);
-    log.fine('$this initState()');
+    log.fine("$this initState()");
   }
 
   @override
   void dispose() {
-    log.fine('$this dispose()');
+    log.fine("$this dispose()");
     _initTimer.cancel();
     _passwordText.dispose();
     _emailText.dispose();
@@ -261,7 +261,7 @@ class _BeginState extends State<StartPage> {
 
     // get result
     final item = models.AccountUser.fromJson(rest.json['user']);
-    log.finer('user: $item');
+    log.finer("user: $item");
 
     // perform login task
     Services.instance().login(context, item, rest.json['token']);
@@ -330,7 +330,7 @@ class _BeginState extends State<StartPage> {
 
         // get result
         final item = models.AccountUser.fromJson(rest.json['user']);
-        log.finer('user: $item');
+        log.finer("user: $item");
 
         // perform login task
         Services.instance().login(context, item, rest.json['token']);

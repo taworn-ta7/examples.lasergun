@@ -40,7 +40,7 @@ class AppTheme {
 
   /// Current theme.
   MaterialColor get current => themeList[_index];
-  int _index = 14;
+  int _index = 15;
 
   /// Change current theme.
   void changeTheme(BuildContext context, int index) {
@@ -48,7 +48,7 @@ class AppTheme {
 
     if (_index != index) {
       _index = index;
-      log.info('change theme to $_index');
+      log.info("change theme to $_index");
 
       App.refresh(context);
     }
