@@ -21,7 +21,7 @@ import {
 import {
 	ArrowBack as BackIcon,
 	Menu as MenuIcon,
-	DirectionsRailway as MainIcon,
+	ElectricBolt as MainIcon,
 	Search as SearchIcon,
 	Home as HomeIcon,
 	Settings as SettingsIcon,

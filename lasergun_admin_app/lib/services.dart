@@ -64,7 +64,7 @@ class Services {
 
     // move out to first page
     Navigator.popUntil(context, (route) => route.isFirst);
-    AppTheme.instance().changeTheme(context, 14);
+    AppTheme.instance().changeTheme(context, 15);
     log.info("logout from system gracefully :)");
 
     // logout logic
